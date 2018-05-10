@@ -1,3 +1,51 @@
 * {
   box-sizing: border-box;
 }
+
+article {
+  max-width: 500px;
+  background-color: grey;
+  padding: 50px;
+}
+
+.funkylink {
+  display: inline-block;
+  padding: 15px;
+  border: 2px solid white;
+  
+  color: white;
+  background-color: red;
+  background-image: url(arrow-01.svg);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: right -25px center;
+  
+  font-family: sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+  /* transition : property duration timing-function delay */
+  
+  transition: background-color .1s linear .3s,
+              bakcgound-position .1s ease-in 0s,
+              border-radius .4s,
+              padding .3s ease-out .1s;
+  
+
+}
+
+
+.funkylink:hover{
+  padding-right: 50px;
+  background-color: forestgreen;
+  background-position: right 10px center;
+  
+  border-radius: 10px;
+  
+  /* transition : property duration timing-function delay */
+  
+  transition: background-color .3s linear .1s,
+              bakcgound-position .1s ease-out .3s,
+              border-radius .4s,
+              padding .4s ease-out;
+}
