@@ -5,7 +5,7 @@
 body {
     height: 100vh;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -19,8 +19,8 @@ body {
     background-size: 150px;
     background-position: bottom -300px center;
     
-    padding: 20px;
-    border-radius: 100px;
+    padding: 0px 2px;
+    border-radius: 200px;
     
     
     transition: padding .3s ease-out .2s,
@@ -29,10 +29,13 @@ body {
 }
 
 .book_btn:hover {
-    padding-right: 225px;
+    padding-right: 200px;
     background-position: center;
-    box-shadow: 5px 5px 1px rgba(0,0,0,.5);
+    box-shadow: 5px 5px 0px rgba(255,0,0,.8);
     
     transition: padding .3s ease-out 0s,
                 background-position .2s ease-out .2s;
 }
+
+/* Square logo */
+
