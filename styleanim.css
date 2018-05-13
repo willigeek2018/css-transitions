@@ -2,19 +2,37 @@
   box-sizing: border-box;
 }
 
-.booking_btn {
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-  
-  background-color: black;
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: sans-serif;
-  
-  font-size: 3em;
-  font-weight: bold;
-  
-  border-radius: 50%;
+body {
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.book_btn {
+    display: inline-block;
+    
+    background-color: saddlebrown;
+    background-image: url(Book_label.svg);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: bottom -300px center;
+    
+    padding: 20px;
+    border-radius: 100px;
+    
+    
+    transition: padding .3s ease-out .2s,
+                background-position .2s ease-in .1s,
+                box-shadow .2s ease-out .1s;
+}
+
+.book_btn:hover {
+    padding-right: 225px;
+    background-position: center;
+    box-shadow: 5px 5px 1px rgba(0,0,0,.5);
+    
+    transition: padding .3s ease-out 0s,
+                background-position .2s ease-out .2s;
 }
