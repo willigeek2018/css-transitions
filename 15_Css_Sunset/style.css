@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body & viewport */
+
+body {
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    width: 500px;
+    height: 500px;
+    
+    background-color: #FFA02E;
+    border-radius: 25%;
+    
+    overflow: hidden;
+    
+    /* animation */
+    
+    animation-name: light-down;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+/* Animation for the background */
+@keyframes light-down {
+    0% {
+        background-color: #FFA02E;
+    }
+    100% {
+        background-color: #360C0D;
+    }
+}
+
+/* Foreground Pyramid */
+
+.peakF {
+    width: 0;
+	height: 0;
+    
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-bottom: 200px solid #360C0D;
+    
+    position: relative;
+    top: 300px;
+    left: 90px;
+    
+    z-index: 1;
+    
+    /* animation */
+    
+    animation-name: slide_right;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+/* Animation for peakF "the pyramid" */
+
+@keyframes slide_right {
+    0% {
+        border-bottom: 200px solid #360C0D;
+        left: 90px;
+    }
+    100% {
+        border-bottom: 200px solid #190607;
+        left: 180px;
+    }
+}
+
+.groundF {
+    width: 600px;
+    height: 25px;
+    
+    background-color: #360C0D;
+    
+    position: relative;
+    top: 280px;
+}
+
+/* Background Pyramid */
+
+
+.peakB {
+    width: 0;
+	height: 0;
+    
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 100px solid #B32708;
+    
+    position: relative;
+    top: 150px;
+    left: 40px;
+    
+    z-index: 0;
+    
+    /* animation */
+    
+    animation-name: slide_rightB;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+/* Animation for peakF "the pyramid" */
+
+@keyframes slide_rightB {
+    0% {
+        left: 40px;
+    }
+    100% {
+        left: 80px;
+    }
+}
+
+.groundB {
+    width: 600px;
+    height: 20px;
+    
+    background-color: #B32708;
+    
+    position: relative;
+    top: 135px;
+}
+
+/* Sun */
+
+.small {
+    
+    float: right;
+    position: relative;
+    top: 50px;
+    right: 50px;
+    
+    width: 150px;
+    height: 150px;
+    
+    background-color: yellow;
+    border-radius: 50%;
+    
+    box-shadow: 5px 5px 100px yellow;
+    
+    opacity: .6;
+    
+    animation-name: sunset_s;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.big {
+    
+    float: right;
+    position: relative;
+    top: 0px;
+    right: -150px;
+    
+    width: 250px;
+    height: 250px;
+    
+    background-color: yellow;
+    border-radius: 50%; 
+    
+    opacity: .6;
+    z-index: 0;
+    
+    animation-name: sunset_b;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* Animation */
+
+@keyframes sunset_s {
+    0% {
+        top: 50px;
+        right: 50px;
+    }
+    
+    100% {
+        top: 550px;
+        right: 550px;
+    }
+}
+
+@keyframes sunset_b {
+    0% {
+        opacity: .6;
+        top: 0px;
+        right: -150px;
+    }
+    
+    100% {
+        opacity: .1;
+        top: 500px;
+        right: 350px;
+    }
+}
