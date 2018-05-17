@@ -13,13 +13,14 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.viewport {
+  overflow: hidden;
+}
 main {
     width: 500px;
     height: 500px;
     
     background-color: #FFA02E;
-    border-radius: 25%;
     
     overflow: hidden;
     
@@ -123,6 +124,7 @@ main {
         left: 40px;
     }
     100% {
+        border-bottom: 100px solid #B32708;
         left: 80px;
     }
 }
