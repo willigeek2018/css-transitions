@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 main {
     width: 500px;
     height: 500px;
@@ -25,7 +26,7 @@ main {
     /* animation */
     
     animation-name: light-down;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
@@ -60,7 +61,7 @@ main {
     /* animation */
     
     animation-name: slide_right;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
@@ -109,7 +110,7 @@ main {
     /* animation */
     
     animation-name: slide_rightB;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
@@ -156,7 +157,7 @@ main {
     opacity: .6;
     
     animation-name: sunset_s;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -179,7 +180,7 @@ main {
     z-index: 0;
     
     animation-name: sunset_b;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
